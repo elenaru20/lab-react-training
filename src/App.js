@@ -112,7 +112,7 @@ function App() {
 
         <NumbersTable limit={23} />
 
-        <FaceBook data={profiles}/>
+        <FaceBook />
 
       </div>
   );
