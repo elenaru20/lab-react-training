@@ -3,8 +3,7 @@ import React from 'react';
 class Carousel extends React.Component {
 
     state = {
-        index: 0,
-        img: this.props.imgs[0]
+        index: 0
     }
 
     leftClickHandler = () => {
@@ -18,8 +17,7 @@ class Carousel extends React.Component {
         
         console.log(newIndex)
         this.setState((state, props) => ({
-            index: newIndex,
-            img:this.props.imgs[newIndex]
+            index: newIndex
         }))       
     }
 
@@ -31,8 +29,7 @@ class Carousel extends React.Component {
         
         console.log(newIndex)
         this.setState((state, props) => ({
-            index: newIndex,
-            img:this.props.imgs[newIndex]
+            index: newIndex
         }))       
     }
 
@@ -40,7 +37,7 @@ class Carousel extends React.Component {
         return (
             <div>
                 <button onClick={this.leftClickHandler}>Left</button>
-                <img src={this.state.img} alt="CarouselPic"/>
+                <img src={this.props.imgs[this.state.index]} alt="CarouselPic"/>
                 <button onClick={this.rightClickHandler}>Right</button>
             </div>
         );
