@@ -40,10 +40,22 @@ function App() {
           <CreditCard
             type="Visa"
             number="0123456789018845"
+            expirationMonth={3}
+            expirationYear={2021}
+            bank="BNP"
+            owner="Maxence Bouret"
+            bgColor="#eeeeee"
+            color="#222222"
          />
          <CreditCard
             type="Master Card"
             number="0123456789010995"
+            expirationMonth={12}
+            expirationYear={2019}
+            bank="N26"
+            owner="Firstname Lastname"
+            bgColor="#ddbb55"
+            color="white"
           />
       </div>
   );
@@ -51,10 +63,7 @@ function App() {
 
 export default App;
 
-// number="0123456789018845"
-// expirationMonth={3}
-// expirationYear={2021}
-// bank="BNP"
+
 // owner="Maxence Bouret"
 // bgColor="#11aa99"
 // color="white"
