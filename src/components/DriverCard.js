@@ -4,7 +4,7 @@ import './style.css';
 
 export default function DriverCard({name, rating, img, car}) {
     return (
-       <div class="driverCard">
+       <div className="driverCard">
         <img src={img} alt="profile picture"/>
         <div>
             <p>{name}</p>
